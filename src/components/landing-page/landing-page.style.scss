@@ -1,0 +1,33 @@
+
+$secondary-color-text: #a07771;
+$primary-color-background: #aad157;
+$secondary-color-background: #8bb42e;
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background-color: rgba($secondary-color-background, .5);
+        position: relative;
+        color: white;
+
+    }
+    .vertical-center {
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 100%;
+        
+      }
+}
+
+.vh-75{
+    height: 75vh;
+} 
+

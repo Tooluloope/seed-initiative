@@ -1,0 +1,23 @@
+$secondary-color-background: #8bb42e;
+
+
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sponsor {
+    .img {
+        width: 100%;
+        height: 200px;
+        max-height: 200px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &:hover {
+            padding: 20px;
+        }
+    }
+}

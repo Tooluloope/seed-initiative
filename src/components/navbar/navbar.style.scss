@@ -1,0 +1,71 @@
+$primary-color-text: #c6538c;
+$secondary-color-text: #a07771;
+$primary-color-button: #c6538c;
+$secondary-color-button: #c6538c;
+$primary-color-background: #aad157;
+$secondary-color-background: #8bb42e;
+
+
+.nav {
+    height: 100px;
+    background-color: transparent !important;
+    z-index: 1001;
+    position: absolute;
+    top:0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    @media screen and (max-width: 991px) {
+        position: relative;
+        height: auto;
+
+        .ml-auto a{
+            color: black !important;
+            &:hover {
+                color: $primary-color-background !important;
+            }
+        }
+        .pad {
+            padding: 20px;
+        }
+        .nav-img {
+            widows: 50px !important;
+            height: 50px !important; 
+        }
+        &.scroll {
+            position: relative !important;
+           
+        }
+    }
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: center;
+    // justify-content: space-between;
+    // padding: 0.5rem 1rem;
+    a{
+        color: white !important;
+        &:hover {
+            color: $primary-color-background !important;
+        }
+    }
+    &.scroll {
+        position: fixed !important;
+        background-color: white !important;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+        a{
+            color: black !important;
+        }
+
+        @media screen and (max-width: 991px) {
+            position: relative !important;
+        }
+    }
+
+    .nav-img {
+        widows: 200px;
+        height: 200px;
+    }
+
+   
+}
